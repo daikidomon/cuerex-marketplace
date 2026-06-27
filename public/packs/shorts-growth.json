@@ -1,0 +1,33 @@
+{
+  "kind": "cuerex.templatePack",
+  "version": "1.0.0",
+  "name": "Shorts Growth Pack",
+  "author": "cuerex",
+  "description": "Short video editing prompts for hooks, structure, and CTA.",
+  "compatibleWith": {
+    "cuerex": ">=0.1.0"
+  },
+  "templates": [
+    {
+      "id": "shorts-hook-cta-v1",
+      "name": "冒頭フック + CTA",
+      "description": "冒頭3秒を強め、最後に自然なCTAを追加する。",
+      "prompt": "ショート動画向けに、冒頭3秒を強いフックにしてください。字幕は短く読みやすくし、最後に押し付け感のない自然なCTAを1つ追加してください。元の主張や事実は変えないでください。",
+      "tags": ["shorts", "hook", "cta"]
+    },
+    {
+      "id": "shorts-conclusion-first-v1",
+      "name": "結論先出し構成",
+      "description": "要点を先に出し、視聴維持しやすい流れへ整える。",
+      "prompt": "動画全体をショート動画向けに、結論や一番強い要点が早めに伝わる構成へ整えてください。字幕は1行あたり短く、口語の自然さは残しつつ冗長な表現を削ってください。",
+      "tags": ["shorts", "structure"]
+    },
+    {
+      "id": "shorts-keyword-emphasis-v1",
+      "name": "キーワード強調",
+      "description": "重要語句が流れないよう、短いテロップを追加する。",
+      "prompt": "動画内の重要なキーワードや数字を抽出し、理解を助ける短いテロップを追加してください。テロップは出しすぎず、視聴者が見落としやすい要点だけに絞ってください。",
+      "tags": ["shorts", "overlay"]
+    }
+  ]
+}

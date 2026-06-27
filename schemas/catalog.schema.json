@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marketplace.cuerex.ai/schemas/catalog.schema.json",
+  "title": "cuerex Marketplace Catalog",
+  "type": "object",
+  "required": ["kind", "version", "updatedAt", "templates"],
+  "additionalProperties": true,
+  "properties": {
+    "kind": {
+      "const": "cuerex.marketplaceCatalog"
+    },
+    "version": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "object"
+    },
+    "templates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "category", "access", "status", "name", "description", "license"],
+        "additionalProperties": true,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "access": {
+            "enum": ["download", "cloud"]
+          },
+          "status": {
+            "enum": ["available", "comingSoon"]
+          },
+          "name": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object" }
+            ]
+          },
+          "description": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object" }
+            ]
+          },
+          "packUrl": {
+            "type": "string"
+          },
+          "previewUrl": {
+            "type": "string"
+          },
+          "license": {
+            "enum": ["free", "paid"]
+          }
+        }
+      }
+    }
+  }
+}

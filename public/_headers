@@ -1,0 +1,22 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/catalog.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+  Content-Type: application/json; charset=utf-8
+
+/packs/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+  Content-Type: application/json; charset=utf-8
+
+/schemas/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json; charset=utf-8
+
+/previews/*
+  Cache-Control: public, max-age=86400

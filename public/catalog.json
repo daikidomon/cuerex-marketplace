@@ -1,0 +1,159 @@
+{
+  "kind": "cuerex.marketplaceCatalog",
+  "version": "1.0.0",
+  "status": "comingSoon",
+  "updatedAt": "2026-06-26",
+  "publisher": {
+    "name": "cuerex",
+    "url": "https://cuerex.ai"
+  },
+  "templates": [
+    {
+      "id": "shorts-growth-pack",
+      "type": "template pack",
+      "category": "shorts",
+      "access": "download",
+      "status": "comingSoon",
+      "name": {
+        "ja": "Shorts Growth Pack",
+        "en": "Shorts Growth Pack"
+      },
+      "description": {
+        "ja": "冒頭フック、結論先出し、CTAをまとめて試せるショート動画向けパックです。",
+        "en": "A short-video pack for stronger hooks, conclusion-first structure, and natural CTAs."
+      },
+      "publisher": "cuerex",
+      "version": "1.0.0",
+      "updatedAt": "2026-06-26",
+      "templateCount": 3,
+      "rating": 4.8,
+      "installs": 1280,
+      "previewUrl": "./previews/shorts-growth.svg",
+      "previewAlt": {
+        "ja": "縦型ショート動画の字幕編集プレビュー",
+        "en": "Vertical short video caption editing preview"
+      },
+      "packUrl": "./packs/shorts-growth.json",
+      "priceLabel": "Coming soon",
+      "license": "free",
+      "tags": ["shorts", "hook", "cta"],
+      "highlights": {
+        "ja": ["冒頭3秒のフック強化", "結論先出し構成", "自然なCTA追加"],
+        "en": ["Stronger first-three-second hooks", "Conclusion-first structure", "Natural CTA prompts"]
+      },
+      "compatibleWith": {
+        "cuerex": ">=0.1.0"
+      }
+    },
+    {
+      "id": "review-cleanup-pack",
+      "type": "template pack",
+      "category": "review",
+      "access": "download",
+      "status": "comingSoon",
+      "name": {
+        "ja": "Review Cleanup Pack",
+        "en": "Review Cleanup Pack"
+      },
+      "description": {
+        "ja": "レビュー後の字幕整理、フィラー感の軽減、テロップの読みやすさ改善に寄せたパックです。",
+        "en": "A cleanup pack for caption polish, lighter filler feel, and clearer on-screen text."
+      },
+      "publisher": "cuerex",
+      "version": "1.0.0",
+      "updatedAt": "2026-06-26",
+      "templateCount": 3,
+      "rating": 4.7,
+      "installs": 940,
+      "previewUrl": "./previews/review-cleanup.svg",
+      "previewAlt": {
+        "ja": "レビュー後の字幕整理プレビュー",
+        "en": "Post-review caption cleanup preview"
+      },
+      "packUrl": "./packs/review-cleanup.json",
+      "priceLabel": "Coming soon",
+      "license": "free",
+      "tags": ["review", "caption", "cleanup"],
+      "highlights": {
+        "ja": ["字幕の短文化", "言い淀みの軽減", "重複テロップ整理"],
+        "en": ["Shorter captions", "Lighter filler feel", "Reduced duplicate overlays"]
+      },
+      "compatibleWith": {
+        "cuerex": ">=0.1.0"
+      }
+    },
+    {
+      "id": "business-explainer-pack",
+      "type": "template pack",
+      "category": "business",
+      "access": "download",
+      "status": "comingSoon",
+      "name": {
+        "ja": "Business Explainer Pack",
+        "en": "Business Explainer Pack"
+      },
+      "description": {
+        "ja": "ビジネス解説動画の章立て、要点テロップ、落ち着いたCTAに使うパックです。",
+        "en": "A pack for structured business explainers, key-point overlays, and restrained CTAs."
+      },
+      "publisher": "cuerex",
+      "version": "1.0.0",
+      "updatedAt": "2026-06-26",
+      "templateCount": 3,
+      "rating": 4.6,
+      "installs": 710,
+      "previewUrl": "./previews/business-explainer.svg",
+      "previewAlt": {
+        "ja": "ビジネス解説動画のテロップ構成プレビュー",
+        "en": "Business explainer overlay structure preview"
+      },
+      "packUrl": "./packs/business-explainer.json",
+      "priceLabel": "Coming soon",
+      "license": "free",
+      "tags": ["business", "explainer", "overlay"],
+      "highlights": {
+        "ja": ["章タイトル追加", "要点3つに整理", "落ち着いたCTA"],
+        "en": ["Chapter title overlays", "Three-point summaries", "Calm CTA prompts"]
+      },
+      "compatibleWith": {
+        "cuerex": ">=0.1.0"
+      }
+    },
+    {
+      "id": "creator-growth-pro",
+      "type": "cloud template",
+      "category": "creator",
+      "access": "cloud",
+      "status": "comingSoon",
+      "name": {
+        "ja": "Creator Growth Pro",
+        "en": "Creator Growth Pro"
+      },
+      "description": {
+        "ja": "テンプレート本文を配布せず、クラウド側で適用する有料パックの予定枠です。",
+        "en": "A planned paid pack applied in the cloud without distributing the template prompt."
+      },
+      "publisher": "cuerex",
+      "version": "private",
+      "updatedAt": "2026-06-26",
+      "templateCount": 8,
+      "rating": null,
+      "installs": 0,
+      "previewUrl": "./previews/creator-growth-pro.svg",
+      "previewAlt": {
+        "ja": "Creator Growth Pro のプレビュー",
+        "en": "Creator Growth Pro preview"
+      },
+      "priceLabel": "Coming soon",
+      "license": "paid",
+      "tags": ["creator", "paid", "cloud"],
+      "highlights": {
+        "ja": ["クラウド適用", "プロンプト非配布", "有料販売向け"],
+        "en": ["Cloud application", "Private prompt body", "Designed for paid sales"]
+      },
+      "compatibleWith": {
+        "cuerex": ">=0.1.0"
+      }
+    }
+  ]
+}

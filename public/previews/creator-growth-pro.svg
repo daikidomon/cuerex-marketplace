@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Creator Growth Pro preview">
+  <rect width="960" height="540" fill="#151515"/>
+  <rect x="86" y="76" width="788" height="388" rx="22" fill="#232323" stroke="#4f4f4f" stroke-width="3"/>
+  <rect x="130" y="120" width="230" height="300" rx="16" fill="#101010"/>
+  <rect x="158" y="152" width="174" height="30" rx="15" fill="#56b886"/>
+  <rect x="158" y="218" width="174" height="12" rx="6" fill="#dff8e8"/>
+  <rect x="158" y="244" width="138" height="12" rx="6" fill="#8d8d8d"/>
+  <rect x="158" y="308" width="174" height="52" rx="12" fill="#303030"/>
+  <rect x="188" y="330" width="114" height="8" rx="4" fill="#e7a34f"/>
+  <rect x="420" y="124" width="338" height="70" rx="12" fill="#1f4d37"/>
+  <rect x="452" y="150" width="216" height="10" rx="5" fill="#dff8e8"/>
+  <rect x="452" y="172" width="268" height="8" rx="4" fill="#8bd8a9"/>
+  <rect x="420" y="228" width="338" height="70" rx="12" fill="#3b342b"/>
+  <rect x="452" y="254" width="188" height="10" rx="5" fill="#ffd8a2"/>
+  <rect x="452" y="276" width="236" height="8" rx="4" fill="#c79c60"/>
+  <rect x="420" y="332" width="338" height="70" rx="12" fill="#2d3340"/>
+  <rect x="452" y="358" width="220" height="10" rx="5" fill="#c9ddff"/>
+  <rect x="452" y="380" width="180" height="8" rx="4" fill="#8ea6d7"/>
+  <path d="M782 155h28v88h-28zM752 185h88v28h-88z" fill="#56b886"/>
+  <circle cx="806" cy="348" r="42" fill="none" stroke="#e7a34f" stroke-width="10"/>
+  <path d="M786 350l14 14 30-38" fill="none" stroke="#ffd8a2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="130" y="454" fill="#dff8e8" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">CLOUD PROTECTED</text>
+</svg>

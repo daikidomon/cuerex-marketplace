@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Review cleanup template preview">
+  <rect width="960" height="540" fill="#171717"/>
+  <rect x="76" y="86" width="808" height="368" rx="18" fill="#232323" stroke="#4a4a4a" stroke-width="3"/>
+  <rect x="116" y="124" width="342" height="58" rx="10" fill="#303030"/>
+  <rect x="138" y="144" width="214" height="8" rx="4" fill="#9f9f9f"/>
+  <rect x="138" y="162" width="276" height="8" rx="4" fill="#686868"/>
+  <rect x="116" y="206" width="342" height="58" rx="10" fill="#303030"/>
+  <rect x="138" y="226" width="254" height="8" rx="4" fill="#9f9f9f"/>
+  <rect x="138" y="244" width="184" height="8" rx="4" fill="#686868"/>
+  <rect x="520" y="126" width="290" height="44" rx="22" fill="#52b788"/>
+  <rect x="552" y="144" width="226" height="8" rx="4" fill="#f4fff8"/>
+  <rect x="520" y="210" width="244" height="44" rx="22" fill="#52b788"/>
+  <rect x="552" y="228" width="180" height="8" rx="4" fill="#f4fff8"/>
+  <rect x="520" y="294" width="318" height="44" rx="22" fill="#52b788"/>
+  <rect x="552" y="312" width="254" height="8" rx="4" fill="#f4fff8"/>
+  <path d="M468 148l20 20 42-54" fill="none" stroke="#74d99f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M468 232l20 20 42-54" fill="none" stroke="#74d99f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M468 316l20 20 42-54" fill="none" stroke="#74d99f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="396" fill="#ffaaa3" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">BEFORE</text>
+  <text x="520" y="396" fill="#74d99f" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">AFTER</text>
+</svg>

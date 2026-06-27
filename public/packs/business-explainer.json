@@ -1,0 +1,33 @@
+{
+  "kind": "cuerex.templatePack",
+  "version": "1.0.0",
+  "name": "Business Explainer Pack",
+  "author": "cuerex",
+  "description": "Prompt templates for practical business explainer videos.",
+  "compatibleWith": {
+    "cuerex": ">=0.1.0"
+  },
+  "templates": [
+    {
+      "id": "business-chapter-overlays-v1",
+      "name": "章立てテロップ",
+      "description": "話題の切り替わりに短い章タイトルを追加する。",
+      "prompt": "ビジネス解説動画として、話題の切り替わりが分かる短い章タイトルテロップを追加してください。章タイトルは端的にし、視聴の邪魔にならない量にしてください。",
+      "tags": ["business", "overlay", "chapter"]
+    },
+    {
+      "id": "business-key-points-v1",
+      "name": "要点3つに整理",
+      "description": "重要なポイントを3つ前後に絞って見せる。",
+      "prompt": "動画内の主張を3つ前後の要点に整理し、必要な箇所に短い要点テロップを追加してください。過度に煽らず、信頼感のある表現にしてください。",
+      "tags": ["business", "explainer", "overlay"]
+    },
+    {
+      "id": "business-calm-cta-v1",
+      "name": "落ち着いたCTA",
+      "description": "ビジネス動画向けの自然な締め文に整える。",
+      "prompt": "動画の最後をビジネス向けの落ち着いたCTAに整えてください。強い売り込みではなく、次に取る行動が自然に分かる表現にしてください。",
+      "tags": ["business", "cta"]
+    }
+  ]
+}

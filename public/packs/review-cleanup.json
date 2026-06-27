@@ -1,0 +1,33 @@
+{
+  "kind": "cuerex.templatePack",
+  "version": "1.0.0",
+  "name": "Review Cleanup Pack",
+  "author": "cuerex",
+  "description": "Post-review cleanup prompts for captions and overlays.",
+  "compatibleWith": {
+    "cuerex": ">=0.1.0"
+  },
+  "templates": [
+    {
+      "id": "review-caption-polish-v1",
+      "name": "字幕読みやすさ調整",
+      "description": "字幕を短く分割し、画面内で読みやすい長さに整える。",
+      "prompt": "既存字幕を読みやすく整えてください。意味を変えずに長すぎる字幕を短く分割し、1つの字幕が画面を占有しすぎないようにしてください。専門用語や固有名詞は保持してください。",
+      "tags": ["review", "caption", "cleanup"]
+    },
+    {
+      "id": "review-filler-light-v1",
+      "name": "フィラー感を軽くする",
+      "description": "話し言葉の自然さを残しつつ、不要な言い淀みを減らす。",
+      "prompt": "話し言葉の自然さを残しながら、字幕上で目立つ不要な言い淀み、重複、冗長な接続語を減らしてください。発言の意図、ニュアンス、事実関係は維持してください。",
+      "tags": ["review", "caption", "filler"]
+    },
+    {
+      "id": "review-overlay-balance-v1",
+      "name": "テロップ量の調整",
+      "description": "重要テロップを残し、情報過多なテロップを減らす。",
+      "prompt": "テロップが多すぎる箇所を整理してください。視聴者の理解に必要な要点テロップは残し、字幕と重複しているだけのテロップは減らしてください。",
+      "tags": ["review", "overlay", "cleanup"]
+    }
+  ]
+}

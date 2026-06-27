@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse, inspect, and install cuerex marketplace packs for templates, presets, and creator workflows."
+    />
+    <title>cuerex Marketplace</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">cx</span>
+          <div>
+            <p class="eyebrow">cuerex marketplace</p>
+            <h1>Marketplace</h1>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <a class="button ghost" href="./catalog.json">catalog.json</a>
+          <button class="button ghost" type="button" data-lang-toggle>English</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Official pack directory</p>
+          <h2 data-i18n="heroTitle">cuerex に追加できる編集パックを探す。</h2>
+          <p data-i18n="heroBody">
+            無料パックはURLをコピーしてcuerexへ追加できます。有料パックは将来クラウド適用で保護します。
+          </p>
+        </div>
+        <div class="hero-stats" aria-label="Marketplace statistics">
+          <div>
+            <strong data-stat-packs>0</strong>
+            <span data-i18n="packsLabel">packs</span>
+          </div>
+          <div>
+            <strong data-stat-templates>0</strong>
+            <span data-i18n="templatesLabel">templates</span>
+          </div>
+          <div>
+            <strong data-stat-free>0</strong>
+            <span data-i18n="freeLabel">free</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch-banner" data-launch-banner>
+        <strong data-i18n="launchTitle">Coming soon</strong>
+        <p data-i18n="launchBody">
+          Marketplaceは準備中です。現在はカタログと配布フローの検証用プレビューです。
+        </p>
+      </section>
+
+      <section class="workspace">
+        <aside class="filters" aria-label="Marketplace filters">
+          <label class="field">
+            <span data-i18n="searchLabel">検索</span>
+            <input type="search" placeholder="shorts, CTA, business" data-search />
+          </label>
+
+          <div class="filter-group">
+            <h3 data-i18n="categoryLabel">カテゴリ</h3>
+            <div class="segmented" data-categories></div>
+          </div>
+
+          <div class="filter-group">
+            <h3 data-i18n="licenseLabel">ライセンス</h3>
+            <div class="segmented" data-licenses></div>
+          </div>
+
+          <div class="filter-group">
+            <h3 data-i18n="statusLabel">状態</h3>
+            <div class="segmented" data-statuses></div>
+          </div>
+
+          <label class="field">
+            <span data-i18n="sortLabel">並び替え</span>
+            <select data-sort>
+              <option value="featured" data-i18n-option="sortFeatured">おすすめ順</option>
+              <option value="newest" data-i18n-option="sortNewest">新しい順</option>
+              <option value="popular" data-i18n-option="sortPopular">利用数順</option>
+              <option value="name" data-i18n-option="sortName">名前順</option>
+            </select>
+          </label>
+        </aside>
+
+        <section class="catalog-area">
+          <div class="catalog-header">
+            <div>
+              <p class="eyebrow" data-i18n="catalogEyebrow">Pack catalog</p>
+              <h2 data-count-label>0 packs</h2>
+            </div>
+            <div class="tag-row" data-tags></div>
+          </div>
+          <div class="grid" data-pack-grid aria-live="polite"></div>
+          <p class="empty" data-empty hidden>該当するパックがありません。</p>
+        </section>
+
+        <aside class="detail-panel" data-detail-panel>
+          <div class="detail-placeholder">
+            <span class="brand-mark" aria-hidden="true">cx</span>
+            <p data-i18n="detailPlaceholder">パックを選択すると詳細と導入URLが表示されます。</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <template id="pack-card-template">
+      <article class="pack-card">
+        <button class="card-hit" type="button">
+          <img class="preview" alt="" />
+          <div class="card-body">
+            <div class="card-title-row">
+              <div>
+                <p class="type"></p>
+                <h3></h3>
+              </div>
+              <span class="price"></span>
+            </div>
+            <p class="description"></p>
+            <div class="card-meta"></div>
+            <div class="card-tags"></div>
+          </div>
+        </button>
+      </article>
+    </template>
+
+    <template id="detail-template">
+      <div class="detail-content">
+        <img class="detail-preview" alt="" />
+        <div class="detail-heading">
+          <p class="type"></p>
+          <h2></h2>
+          <p class="description"></p>
+        </div>
+        <div class="detail-actions"></div>
+        <div class="install-box"></div>
+        <section>
+          <h3 data-i18n="highlightsLabel">内容</h3>
+          <ul class="highlights"></ul>
+        </section>
+        <section>
+          <h3 data-i18n="detailsLabel">詳細</h3>
+          <dl class="detail-list"></dl>
+        </section>
+      </div>
+    </template>
+
+    <div class="toast" data-toast hidden></div>
+    <script type="module" src="./site.js"></script>
+  </body>
+</html>
