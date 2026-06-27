@@ -11,6 +11,28 @@ The first version is a Cloudflare Pages app with a minimal static build step. It
 - `dist/previews/*` as pack previews
 - `dist/index.html` as the marketplace UI
 
+## Technical Direction
+
+The marketplace should move toward an `Astro + React` architecture.
+
+Astro should be the base framework for the public marketplace because the public pages need fast static delivery, language-specific URLs, indexable HTML, and simple Cloudflare deployment. Public routes should be generated as localized pages such as `/ja/` and `/en/`.
+
+React should be used inside Astro for interactive UI surfaces:
+
+- marketplace search and filtering
+- pack detail panels
+- creator application flows
+- authenticated upload and management screens
+- future admin/review tools
+
+Avoid making the public marketplace a React-only single-page app. A React SPA is useful for app-like screens, but it is weaker for public marketplace concerns such as SEO, static HTML, and clean i18n routing.
+
+Future Cloudflare storage and auth direction:
+
+- D1 stores marketplace metadata, creator records, review state, and upload ownership.
+- R2 stores uploaded pack files, preview images, and protected assets.
+- Authenticated creator/admin routes should be implemented as dynamic Cloudflare-backed flows while keeping public catalog pages statically renderable where possible.
+
 ## Local Development
 
 ```bash
