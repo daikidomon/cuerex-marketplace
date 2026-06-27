@@ -4,12 +4,12 @@ Static marketplace for cuerex packs.
 
 Current public state: `Coming soon`.
 
-The first version is a Cloudflare Pages app with no build step. It publishes:
+The first version is a Cloudflare Pages app with a minimal static build step. It publishes:
 
-- `public/catalog.json` as the marketplace catalog
-- `public/packs/*.json` as downloadable template packs
-- `public/previews/*` as pack previews
-- `public/index.html` as the marketplace UI
+- `dist/catalog.json` as the marketplace catalog
+- `dist/packs/*.json` as downloadable template packs
+- `dist/previews/*` as pack previews
+- `dist/index.html` as the marketplace UI
 
 ## Local Development
 
@@ -31,6 +31,14 @@ npm run validate
 
 The validator checks catalog shape, referenced pack files, preview files, and duplicate template IDs.
 
+## Build
+
+```bash
+npm run build
+```
+
+The build validates the catalog and copies `public/` to `dist/`.
+
 ## Deploy
 
 ```bash
@@ -41,8 +49,8 @@ Cloudflare Pages settings:
 
 ```text
 Project name: cuerex-marketplace
-Build command: empty
-Build output directory: public
+Build command: npm run build
+Build output directory: dist
 Custom domain: marketplace.cuerex.ai
 ```
 

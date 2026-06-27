@@ -5,12 +5,12 @@
 ```text
 Project name: cuerex-marketplace
 Framework preset: None
-Build command: empty
-Build output directory: public
+Build command: npm run build
+Build output directory: dist
 Custom domain: marketplace.cuerex.ai
 ```
 
-`public/_headers` is included so Cloudflare Pages will attach CORS headers to `catalog.json` and downloadable pack files.
+`public/_headers` is copied into `dist/_headers` during build so Cloudflare Pages will attach CORS headers to `catalog.json` and downloadable pack files.
 
 ## Direct Upload
 
@@ -21,7 +21,7 @@ CLOUDFLARE_ACCOUNT_ID=<account-id> npm run deploy
 The script runs:
 
 ```bash
-npx wrangler pages deploy public --project-name=cuerex-marketplace
+npx wrangler pages deploy dist --project-name=cuerex-marketplace
 ```
 
 For CI, configure:
